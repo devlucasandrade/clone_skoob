@@ -59,7 +59,8 @@ flutter run
 ```
 
 ## Observações
-1. Projeto concebido e realizado como forma de estudo na utilização do flutter, seus widgets e funcionaldades.
+* Projeto concebido e realizado como forma de estudo na utilização do flutter, seus widgets e funcionaldades.
+* O crédito devé do Skoob e os idealizadores e criadores do projeto.
 
 
 <!-- ## Contribua
