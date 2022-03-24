@@ -15,21 +15,22 @@ Todas imagens e ícones são propriedades do [Skoob](https://www.skoob.com.br).
 
 ## Introdução
 
-Abordada o contato incial do usuário ao instalar e utilizar o app. Foram criadas as telas de Entrada, Login, Cadastro, Reenviar senha, Dúvidas (Tutorial - como funciona). Cada uma delas com seu respectivo screenshot em ordem logo abaixo.
+Abordada o contato incial do usuário ao instalar e utilizar o app. Foram criadas as telas de Inicial, Login, Reenviar senha, Cadastro, Dúvidas (Tutorial - como funciona). Cada uma delas com seu respectivo screenshot em ordem logo abaixo.
 
 ## Screenshots
 
-<p float="left">
-  <img src="/screenshots/01.png" width="250" />
-  <img src="/screenshots/02.png" width="250" />
-  <img src="/screenshots/03.png" width="250" /> 
-  <img src="/screenshots/04.png" width="250" /> 
-  <img src="/screenshots/tutorial01.png" width="250" /> 
-  <img src="/screenshots/tutorial02.png" width="250" /> 
-  <img src="/screenshots/tutorial03.png" width="250" /> 
-  <img src="/screenshots/tutorial04.png" width="250" />
-  <img src="/screenshots/tutorial05.png" width="250" />
-  <img src="/screenshots/tutorial06.png" width="250" /> 
-  <img src="/screenshots/tutorial07.png" width="250" />
+<p float="left"> 
+  <img alt="Inicial" src="/screenshots/01.png" width="200" />
+  <img alt="Login" src="/screenshots/02.png" width="200" />
+  <img alt="Recuperação de senha" src="/screenshots/03.png" width="200" /> 
+  <img alt="Cadastro" src="/screenshots/04.png" width="200" /> 
+  <img alt="Tutorial 01" src="/screenshots/tutorial01.png" width="200" /> 
+  <img alt="Tutorial 02" src="/screenshots/tutorial02.png" width="200" /> 
+  <img alt="Tutorial 03" src="/screenshots/tutorial03.png" width="200" /> 
+  <img alt="Tutorial 04" src="/screenshots/tutorial04.png" width="200" />
+  <img alt="Tutorial 05" src="/screenshots/tutorial05.png" width="200" />
+  <img alt="Tutorial 06" src="/screenshots/tutorial06.png" width="200" /> 
+  <img alt="Tutorial 07" src="/screenshots/tutorial07.png" width="200" />
 </p>
+
 #### Todas imagens e ícones são propriedades do [Skoob](https://www.skoob.com.br)
