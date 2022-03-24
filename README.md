@@ -11,7 +11,8 @@ Todas imagens e ícones são propriedades do [Skoob](https://www.skoob.com.br).
 * [Introdução](#introdução)
 * [Screenshots](#screenshots)
 * [Executando](#executando)
-* [Contribua](#contribua)
+* [Observações](#observações)
+<!-- * [Contribua](#contribua) -->
 
 ## Introdução
 
@@ -34,3 +35,38 @@ Abordada o contato incial do usuário ao instalar e utilizar o app. Foram criada
 </p>
 
 #### Todas imagens e ícones são propriedades do [Skoob](https://www.skoob.com.br)
+
+## Executando
+
+1. [Instale o Flutter](https://flutter.dev/docs/get-started/install)
+
+2. Clone este repositório
+
+```
+git clone https://github.com/devlucasandrade/clone_skoob
+```
+
+3. Baixe as dependências
+
+```
+flutter pub get
+```
+
+4. Execute
+
+```
+flutter run
+```
+
+## Observações
+1. Projeto concebido e realizado como forma de estudo na utilização do flutter, seus widgets e funcionaldades.
+
+
+<!-- ## Contribua
+
+1. **Fork** o repositório no *GitHub*
+2. **Clone** o projeto para a sua máquina
+3. **Commit** suas alterações 
+4. **Push** para o seu *fork*
+5. Faça um **Pull Request**
+-->
