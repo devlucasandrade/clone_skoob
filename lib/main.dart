@@ -7,13 +7,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 bool? seenOnboard;
 
 Future main() async {
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   SharedPreferences pref = await SharedPreferences.getInstance();
   seenOnboard = pref.getBool('seenOnboard') ?? false;
   runApp(const HomePage());
-  FlutterNativeSplash.remove();
+  // FlutterNativeSplash.remove();
 }
 
 class HomePage extends StatelessWidget {
