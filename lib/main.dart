@@ -7,13 +7,10 @@ bool? seenOnboard;
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   SharedPreferences pref = await SharedPreferences.getInstance();
   seenOnboard = pref.getBool('seenOnboard') ?? false;
   runApp(const HomePage());
-  // FlutterNativeSplash.remove();
 }
 
 class HomePage extends StatelessWidget {
