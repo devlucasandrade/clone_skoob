@@ -40,14 +40,14 @@ class ForgotPassPage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 30),
-              const TextField(
-                decoration: InputDecoration(
+              TextFormField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
                       Radius.circular(30),
                     ),
                   ),
-                  // labelText: 'Email',
                   hintText: 'Digite o email cadastrado',
                   contentPadding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                   labelStyle: TextStyle(fontSize: 18),
