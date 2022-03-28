@@ -20,18 +20,18 @@ Abordada o contato incial do usuário ao instalar e utilizar o app. Foram criada
 
 ## Screenshots
 
-<p float="left"> 
+<p float="left">
+  <img alt="Tutorial 01" src="/screenshots/onboard (1).png" width="200" />
+  <img alt="Tutorial 02" src="/screenshots/onboard (2).png" width="200" />
+  <img alt="Tutorial 03" src="/screenshots/onboard (3).png" width="200" />
+  <img alt="Tutorial 04" src="/screenshots/onboard (4).png" width="200" />
+  <img alt="Tutorial 05" src="/screenshots/onboard (5).png" width="200" />
+  <img alt="Tutorial 06" src="/screenshots/onboard (6).png" width="200" />
+  <img alt="Tutorial 07" src="/screenshots/onboard (7).png" width="200" />
   <img alt="Inicial" src="/screenshots/01.png" width="200" />
   <img alt="Login" src="/screenshots/02.png" width="200" />
-  <img alt="Recuperação de senha" src="/screenshots/03.png" width="200" /> 
-  <img alt="Cadastro" src="/screenshots/04.png" width="200" /> 
-  <img alt="Tutorial 01" src="/screenshots/tutorial01.png" width="200" /> 
-  <img alt="Tutorial 02" src="/screenshots/tutorial02.png" width="200" /> 
-  <img alt="Tutorial 03" src="/screenshots/tutorial03.png" width="200" /> 
-  <img alt="Tutorial 04" src="/screenshots/tutorial04.png" width="200" />
-  <img alt="Tutorial 05" src="/screenshots/tutorial05.png" width="200" />
-  <img alt="Tutorial 06" src="/screenshots/tutorial06.png" width="200" /> 
-  <img alt="Tutorial 07" src="/screenshots/tutorial07.png" width="200" />
+  <img alt="Recuperação de senha" src="/screenshots/03.png" width="200" />
+  <img alt="Cadastro" src="/screenshots/04.png" width="200" />
 </p>
 
 #### Todas imagens e ícones são propriedades do [Skoob](https://www.skoob.com.br)
