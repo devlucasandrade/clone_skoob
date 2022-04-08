@@ -1,7 +1,7 @@
-import 'package:clone_books/pages/enter_page.dart';
-import 'package:clone_books/pages/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'pages/pages.dart';
 
 bool? seenOnboard;
 
@@ -22,6 +22,13 @@ class HomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Clone Skoob',
       home: seenOnboard == true ? const EnterPage() : const OnBoardingPage(),
+      initialRoute: '/enter',
+      routes: {
+        '/login': (context) => LoginPage(),
+        '/enter': (context) => EnterPage(),
+        '/content': (context) => ContentPage(),
+        '/register': (context) => RegisterPage(),
+      },
     );
   }
 }

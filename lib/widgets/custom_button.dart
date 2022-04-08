@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 class CustomButton extends StatelessWidget {
   final String label;
   final Color color;
-  const CustomButton({Key? key, required this.label, required this.color})
-      : super(key: key);
+  const CustomButton({
+    Key? key,
+    required this.label,
+    required this.color,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,18 +1,14 @@
-import 'package:clone_books/pages/enter_page.dart';
-import 'package:clone_books/pages/forgotpass_page.dart';
-import 'package:clone_books/pages/signup_page.dart';
-import 'package:clone_books/widgets/custom_button.dart';
+import 'package:clone_books/controllers/login_controller.dart';
 import 'package:flutter/material.dart';
+import '../components/login/custom_login_btn.dart';
+import '../widgets/widgets.dart';
+import 'pages.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  LoginController _controller = LoginController();
 
-  @override
-  State<LoginPage> createState() => _LoginPageState();
-}
+  LoginPage({Key? key}) : super(key: key);
 
-class _LoginPageState extends State<LoginPage> {
-  bool _showPassword = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,45 +46,18 @@ class _LoginPageState extends State<LoginPage> {
                   scale: 1.1,
                 ),
                 const SizedBox(height: 20),
-                TextFormField(
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(
-                    labelText: "Email",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(30),
-                      ),
-                    ),
-                    contentPadding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-                    labelStyle: TextStyle(fontSize: 18),
-                  ),
+                CustomTextFormField(
+                  onChanged: _controller.setLogin,
+                  label: 'Email',
                 ),
                 const SizedBox(height: 15),
-                TextFormField(
-                  obscureText: _showPassword == false ? true : false,
-                  decoration: InputDecoration(
-                    border: const OutlineInputBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(30),
-                      ),
-                    ),
-                    labelText: "Senha",
-                    contentPadding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                    labelStyle: const TextStyle(fontSize: 18),
-                    suffixIcon: GestureDetector(
-                      child: Icon(_showPassword == false
-                          ? Icons.visibility_off_outlined
-                          : Icons.visibility_outlined),
-                      onTap: () {
-                        setState(() {
-                          _showPassword = !_showPassword;
-                        });
-                      },
-                    ),
-                  ),
+                CustomTextFormField(
+                  onChanged: _controller.setPass,
+                  label: 'Senha',
+                  obscuredText: true,
                 ),
-                const SizedBox(height: 20),
-                OutlinedButton(
+                const SizedBox(height: 5),
+                TextButton(
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
@@ -98,14 +67,11 @@ class _LoginPageState extends State<LoginPage> {
                     );
                   },
                   child: const Text('Esqueci minha senha'),
-                  style: OutlinedButton.styleFrom(
-                    side: const BorderSide(color: Colors.white),
-                  ),
                 ),
-                const SizedBox(height: 30),
-                const CustomButton(
+                const SizedBox(height: 20),
+                CustomLoginButtonComponent(
                   label: 'ENTRAR',
-                  color: Colors.blue,
+                  loginController: _controller,
                 ),
                 const SizedBox(height: 10),
                 const Text('ou', style: TextStyle(fontSize: 18)),
@@ -122,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                         'Não tem cadastro?',
                         style: TextStyle(fontSize: 16),
                       ),
-                      OutlinedButton(
+                      TextButton(
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -132,13 +98,6 @@ class _LoginPageState extends State<LoginPage> {
                           );
                         },
                         child: const Text('Cadastre-se'),
-                        style: OutlinedButton.styleFrom(
-                          padding: const EdgeInsets.fromLTRB(20, 12, 20, 12),
-                          side: const BorderSide(color: Colors.blue),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                        ),
                       ),
                     ],
                   ),

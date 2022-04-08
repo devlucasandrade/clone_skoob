@@ -16,7 +16,7 @@ class ForgotPassPage extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (_) => const LoginPage(),
+                builder: (_) => LoginPage(),
               ),
             );
           },
@@ -64,7 +64,7 @@ class ForgotPassPage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => const LoginPage(),
+                      builder: (_) => LoginPage(),
                     ),
                   );
                 },
